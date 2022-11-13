@@ -62,4 +62,10 @@ private TraineeRepository repo;
 		return repo.save(t);
 	}
 
+	// Added for checking purposes
+	public int findByLocation(String location) {
+		return repo.findByLocation(location);
+		
+	}
+
 }

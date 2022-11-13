@@ -24,5 +24,8 @@ public interface TraineeRepository extends JpaRepository<Trainee,Integer>{
 	@Transactional
 	@Query(value="update Trainee set location=?1 where traineeId=?2")
 	public int updateTrainee(String location,int traineeId);
+
+	// Added for checking purposes
+	public int findByLocation(String location);
 	
 }

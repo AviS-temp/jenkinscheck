@@ -53,6 +53,11 @@ public class TraineeController {
 		   return service.updateTrainee(location,traineeId);
 	   }
 	   
+	   @GetMapping(path="/{location}")
+	   public int getProduct(@PathVariable("location") String location) {
+		   return service.findByLocation(location);
+	   }
+	   
 }
 	  
 
